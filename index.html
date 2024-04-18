@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Brasil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="conteiner">
+        <h1>DIGITE SEU CEP</h1>
+
+        <div id="informaCep">
+            <input type="text" name="digitaCep" id="digitaCep">
+            <img src="./lupa.png" alt="lupa" onclick="buscar()" id="lupa">
+        </div>
+
+        <div id="endereco">
+        <div id="mapaDiv">
+            
+        </div>
+        <div class="cardEnd">
+            <strong>CEP</strong>
+            <p id="cep">Falta Pesquisar</p>
+        </div>
+        <div class="cardEnd">
+            <strong>ESTADO</strong>
+            <p id="estado">Falta Pesquisar</p>
+        </div>
+        <div class="cardEnd">
+            <strong>CIDADE</strong>
+            <p id="cidade">Falta Pesquisar</p>
+        </div>
+        <div class="cardEnd">
+            <strong>BAIRRO</strong>
+            <p id="bairro">Falta Pesquisar</p>
+        </div>
+        <div class="cardEnd">
+            <strong>RUA</strong>
+            <p id="rua">Falta Pesquisar</p>
+        </div>
+        
+        </div>
+    </div>
+    
+    <script src="api.js"></script>
+    
+</body>
+</html>
